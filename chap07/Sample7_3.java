@@ -1,9 +1,9 @@
-class SuperA { }                                // スーパークラスA
-final class SuperB { }                          // スーパークラスB
-class SuperC { void print(){} }                 // スーパークラスC
-class SuperD { final void print(){} }           // スーパークラスD
+class SuperA { }                                
+final class SuperB { }                          
+class SuperC { void print(){} }                
+class SuperD { final void print(){} }           
 
-class SubA extends SuperA { }                   // サブクラスA // OK
-//class SubB extends SuperB { }                 // サブクラスB // NG
-class SubC extends SuperC { void print(){} }    // サブクラスC // OK
-//class SubD extends SuperD { void print(){} }  // サブクラスD // NG
+class SubA extends SuperA { }                   
+//class SubB extends SuperB { }                 
+class SubC extends SuperC { void print(){} }    
+//class SubD extends SuperD { void print(){} }  

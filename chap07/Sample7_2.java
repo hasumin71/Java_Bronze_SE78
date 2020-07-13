@@ -1,21 +1,21 @@
-class Super {    // ƒX[ƒp[ƒNƒ‰ƒX
+class Super {    
   public void print(String s) {
     System.out.println("Super print : " + s);
   }
   public void method(){ }
 }
-class Sub extends Super {  // ƒTƒuƒNƒ‰ƒX
+class Sub extends Super {  
   public void print(String s) {
-    s = "“n‚³‚ê‚½•¶š—ñ‚Í " + s + " ‚Å‚·";
+    s = "æ¸¡ã•ã‚ŒãŸæ–‡å­—åˆ—ã¯ " + s + "ã§ã™"; //ã‚ªãƒ¼ãƒãƒ¼ã‚¯ãƒ©ã‚¹//å¤‰æ•°ã‚’ã‚µãƒ–ã‚¯ãƒ©ã‚¹ã‚’å†å®šç¾©ã—ã¦ã„ã‚‹
     System.out.println("Sub print   : " + s);
   }
-  //void method(){ } //ƒRƒ“ƒpƒCƒ‹ƒGƒ‰[
+ 
 }
 class Sample7_2 {
   public static void main(String[] args) {
     Super s1 = new Super();
-    s1.print("Java");    // 2s–Ú‚ªŒÄ‚Ño‚³‚ê‚é
+    s1.print("Java");   
     Sub s2 = new Sub();
-    s2.print("Java");    // 8s–Ú‚ªŒÄ‚Ño‚³‚ê‚é
+    s2.print("Java");  
   }
 }
