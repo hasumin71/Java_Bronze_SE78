@@ -57,18 +57,37 @@
 // }
 
 //問7-4
-class X {
-  static int val;
-}
-class A extends X {
-  A() { val++; }
-}
-class B extends X {
-  B() { val++; }
-}
-class Test {
-  public static void main(String[] args) {
-    new A(); new B();
-    System.out.println(X.val);
-  }
-}
+// class X {
+//   static int val;
+// }
+// class A extends X {
+//   A() { val++; }
+// }
+// class B extends X {
+//   B() { val++; }
+// }
+// class Test {
+//   public static void main(String[] args) {
+//     new A(); new B();
+//     System.out.println(X.val);
+//   }
+// }
+
+//7-6
+// class A {
+//   static int num = 0;
+//   A() { num++; } //Aコンストラクタが呼び出されると２行目のstatic変数であるnum変数がインクリメントされます。
+// }
+// class B extends A {
+//   int num = 10;
+//   B() { num++; } //B()コンストラクタが呼び出されると,6行目のインスタンス変数であるnum変数がインクリメントされます。
+// }
+// class Test {
+//   public static void main(String[] args) {
+//     A a1 = new A(); A a2 = new A(); A a3 = new A(); //
+//     B b1 = new B(); B b2 = new B(); B b3 = new B();
+//     A[] valA = {a1, a2, a3};
+//     B[] valB = {b1, b2, b3};
+//     for( B obj : valB){ System.out.print(obj.num + " ");} 
+//   }
+// }
