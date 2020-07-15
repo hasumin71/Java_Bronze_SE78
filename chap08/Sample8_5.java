@@ -3,11 +3,11 @@ class Sample8_5 {
     double d = 10.5;
     //int i = d;
     int i = (int)d;
-    System.out.println("iの値：" + i);
+    System.out.println("i縺ｮ蛟､" + i);
     //foo(i);
     foo((short)i);
   }
   static void foo(short a){
-    System.out.println("aの値：" + a);
+    System.out.println("a縺ｮ蛟､" + a);
   }
 }

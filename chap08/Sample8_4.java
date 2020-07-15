@@ -7,7 +7,7 @@ interface YIF {
 interface SubIF extends XIF, YIF {
   void methodC();
 }
-class MyClass implements SubIF{
+class MyClass implements SubIF{ //implements 実装クラスの宣言
   public void methodA() { System.out.println("methodA()"); }
   public void methodB() { System.out.println("methodB()"); }
   public void methodC() { System.out.println("methodC()"); }

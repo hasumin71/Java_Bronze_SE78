@@ -1,14 +1,14 @@
 class Test {
   void myPrint(){ System.out.println("myPrint()"); }
-  void myPrint(int a) { System.out.println("myPrint(int a)"); }
+  void myPrint(int a) { System.out.println("myPrint(int a)"); } //
   void myPrint(int a, int b){
-                        System.out.println("myPrint(int a, int b)"); }
+                        System.out.println("myPrint(int a, int b)"); } //蠑墓焚縺ｮ謨ｰ縺檎焚縺ｪ繧九�ｮ縺ｧok
   void myPrint(String s) {
-                        System.out.println("myPrint(String s)"); }
+                        System.out.println("myPrint(String s)"); } //蠑墓焚縺ｮ蝙九′逡ｰ縺ｪ繧九�ｮ縺ｧok
 }
 class Sample6_3 {
   public static void main(String[] args) {
-    //Testクラスのインスタンス化
+    
     Test t = new Test();
     t.myPrint();
     t.myPrint(100);
@@ -16,3 +16,9 @@ class Sample6_3 {
     t.myPrint("yamamoto");
   }
 }
+
+//邨先棡
+// myPrint()
+// myPrint(int a)
+// myPrint(int a, int b)
+// myPrint(String s)

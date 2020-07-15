@@ -1,11 +1,11 @@
 class Employee {
-  //ƒCƒ“ƒXƒ^ƒ“ƒX•Ï”‚ÉprivateCüŽq‚ðŽw’è
+ 
   private int id;
 
-  //ƒRƒ“ƒXƒgƒ‰ƒNƒ^‚ÉpublicCüŽq‚ðŽw’è
+ 
   public Employee(int i) { id = i; }
 
-  //ƒƒ\ƒbƒh‚ÉpublicCüŽq‚ðŽw’è
+
   public int getId() { return id; }
 }
 
@@ -13,12 +13,8 @@ public class Sample6_9 {
   public static void main(String[] args) {
     Employee emp = new Employee(100);
 
-    //private Žw’è‚³‚ê‚½ƒƒ“ƒo‚ÍA‘¼ƒNƒ‰ƒX‚©‚çƒAƒNƒZƒX•s‰Â
-    //System.out.println(
-    // "private Žw’è‚ÌƒCƒ“ƒXƒ^ƒ“ƒX•Ï”‚ÖƒAƒNƒZƒX : " + emp.id);
-
-    //publicŽw’è‚³‚ê‚½ƒƒ“ƒo‚ÍA‘¼ƒNƒ‰ƒX‚©‚çƒAƒNƒZƒX‰Â
+    
     System.out.println(
-    "publicŽw’è‚Ìƒƒ\ƒbƒh‚ÖƒAƒNƒZƒX : " + emp.getId());
+    "publicæŒ‡å®šã®ãƒ¡ã‚½ãƒƒãƒ‰ã¸ã‚¢ã‚¯ã‚»ã‚¹ : " + emp.getId());
   }
 }

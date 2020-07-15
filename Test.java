@@ -91,3 +91,33 @@
 //     for( B obj : valB){ System.out.print(obj.num + " ");} 
 //   }
 // }
+
+// //7-8
+// public class Test {
+//   private String name;
+//   public Test(){this("fern");}
+//   public Test(String name){ this.name = name;}
+//   public String getName() { return name; }
+// }
+
+// public class Tree extends Test {
+//   public void growFruit(){}
+//   public void dropLeaves(){}
+// }
+
+//8-9
+interface I {
+  void func();
+}
+class A implements I {
+  public void func(){ System.out.println("A "); }
+}
+class B extends A{
+  public void func(){ System.out.println("B ");}
+}
+class Test {
+  public static void main(String[] args){
+    I obj = new B();
+    obj.func();
+  }
+}

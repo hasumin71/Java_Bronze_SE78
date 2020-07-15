@@ -10,9 +10,9 @@ class MyClass extends Foo {
 }
 class Sample8_6 {
   public static void main(String[] args) {
-    //ƒX[ƒp[ƒNƒ‰ƒX‚Ì•Ï”‚ÉƒTƒuƒNƒ‰ƒX‚ÌƒIƒuƒWƒFƒNƒg‚ğ‘ã“ü
-    Foo f = new MyClass();
-    f.method(10, 20);  //ƒX[ƒp[ƒNƒ‰ƒX‚Ìƒƒ\ƒbƒhŒÄ‚Ño‚µOK
-    f.print();         //ƒTƒuƒNƒ‰ƒX‚Ìƒƒ\ƒbƒhŒÄ‚Ño‚µOK
+    
+    Foo f = new MyClass();//myã‚¯ãƒ©ã‚¹ã‚’ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹åŒ–ã—ã¦ã„ã¾ã™ãŒã€å¤‰æ•°ã¯æŠ½è±¡ã‚¯ãƒ©ã‚¹ã®å‹ã§å®£è¨€ã—ã¦ã„ã‚‹ã€‚
+    f.method(10, 20);  
+    f.print();    
   }
 }

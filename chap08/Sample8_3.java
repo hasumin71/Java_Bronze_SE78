@@ -1,5 +1,5 @@
 interface MyInterface {
-  //int a; //初期化していないのでコンパイルエラー
+  
   int b = 10;
   final int c = 20;
   public int d = 30;
@@ -9,7 +9,7 @@ interface MyInterface {
   public abstract void methodA();
   abstract void methodB();
   void methodC();
-  //protected abstract void methodD(); //protected は使用不可。コンパイルエラー
+  //protected abstract void methodD(); //protected 
 }
 class MyClass implements MyInterface {
   public void methodA(){}
