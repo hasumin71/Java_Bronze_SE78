@@ -105,19 +105,49 @@
 //   public void dropLeaves(){}
 // }
 
-//8-9
-interface I {
-  void func();
-}
-class A implements I {
-  public void func(){ System.out.println("A "); }
-}
-class B extends A{
-  public void func(){ System.out.println("B ");}
-}
+// //8-9
+// interface I {
+//   void func();
+// }
+// class A implements I {
+//   public void func(){ System.out.println("A "); }
+// }
+// class B extends A{
+//   public void func(){ System.out.println("B ");}
+// }
+// class Test {
+//   public static void main(String[] args){
+//     I obj = new B();
+//     obj.func();
+//   }
+// }
+
+//8-10
+// class Foo {
+//   String name;
+// }
+// class Bar extends Foo {
+//   Bar(String name) {
+//     this.name = name;
+//   }
+//   void show() {
+//     System.out.pirntln(name);
+//   }
+//   public static void main(String[] args){
+//     Foo obj= new Bar("hana");
+//   }
+// }
+
+//16
 class Test {
   public static void main(String[] args){
-    I obj = new B();
-    obj.func();
+    int[] array1 = {1,2,3};
+    int[] array2 = {4,5};
+    for (int x = 0; x < array1.length; x++){
+      System.out.print(array1[x]+ " ");
+      for(int y = 0; y < array2.length; y++){
+        System.out.print(array2[y] + " ");
+      }
+    }
   }
 }
