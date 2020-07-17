@@ -153,10 +153,70 @@
 // }
 
 //17
-class Test {
-  public static void main(String[] args){ //初めから判定がfalseでも
-    for(int i = 5; i < i++; i++){
-      System.out.println("Hi");
+// class Test {
+//   public static void main(String[] args){ //初めから判定がfalseでも
+//     for(int i = 5; i < i++; i++){
+//       System.out.println("Hi");
+//     }
+//   }
+// }
+
+//18
+// class Test {
+//   public static void main(String[] args){
+//     char[] val = {'x', 'y', 'z'};
+//     for(int i = 0; i < 2; i++){
+//       for(char c : val){
+//         System.out.print(val[i]);
+//       }
+//     }
+//   }
+// }
+
+//19
+// class Test {
+//   public static void main(String[] args){
+//     for(int i= 1; i < 5; i++){
+//       if(i==2){ continue; }
+//       System.out.println(" i = " + i);
+//     }
+//   }
+// }
+
+//20
+// class Test {
+//   public static void main(String[] args) {
+//     for(int i = 1; i < 5; i++){
+//       if(i == 2){ break;}
+//       System.out.print(" i= " + i );
+//     }
+//   }
+// }
+
+//21
+// class Test {
+//   public static void main(String[] args) {
+//     String[] str = new String[3];
+//     str[0] = "JP";
+//     str[1] = null; //nullリテラルを明示的に代入しても問題ない
+//     str[2] = "US";
+//     for(int i = 1; i<str.length; i++){
+//       System.out.println(str[i] + " ");
+//     }
+//   }
+// }  
+
+//22 
+class Test{
+  public static void main(String[] args){
+    char[] array = {'a','b','c'};
+    for(int i = 0; i < array.length; i++){
+      System.out.print(i + " ");
+      switch (array[i]){
+        case 'a': System.out.print("a ");
+        case 'b': System.out.print("b ");
+        case 'c': System.out.print("c ");
+      }
     }
   }
 }
