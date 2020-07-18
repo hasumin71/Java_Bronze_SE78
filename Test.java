@@ -260,3 +260,36 @@
 //     System.out.print("B ");
 //   }
 // }
+
+//45
+// class Foo{
+//   long m1(int var) { return 0;}
+//   long m2(int var, char c) { return 0;}
+// }
+// class Bar extends Foo {
+//   long m1(int var) { return 0; }
+//   int m1(char var) { return 0;}
+//   int m1(long var) { return 0;}
+//   public long m2(int var, char c) { return 0;}
+//   public long m2(char c, int var) { return 0;}
+// }
+
+//46
+// class Foo {
+//   int a;
+//   Foo(){a = 10;}
+//   Foo(int a){this.a = a;}
+// }
+// class Bar extends Foo{
+//   int b, c;
+//   Bar(int a, int b, int c){
+//     super(a); //superクラスの変数をサブクラスで使う際はこのように明示しなければいけない、明示しなければスーパークラスのa初期値が与えられる
+//     this.c = c; //ここで指定してあげなければいけない
+//   }
+// }
+// class Test {
+//   public static void main(String[] args){
+//     Bar bar = new Bar(100, 200, 300);
+//     System.out.println("a:" +bar.a + " b:" + bar.b + " c:" + bar.c);
+//   }
+// }
