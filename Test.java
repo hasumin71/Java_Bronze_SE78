@@ -222,11 +222,27 @@
 // }
 
 //30
+// class Test {
+//   public static void main(String[] args){
+//     System.out.println("data : " + args[2] + args[3]);
+//   }
+//   public static void main(char[] args){
+//     System.out.print("data = " + args[2] + args[3]);
+//   }
+// }
+
+//42;
+class Foo {
+  String str = "Hello";
+}
+class Bar extends Foo {
+  String str = "Bye";
+}
 class Test {
   public static void main(String[] args){
-    System.out.println("data : " + args[2] + args[3]);
-  }
-  public static void main(char[] args){
-    System.out.print("data = " + args[2] + args[3]);
+    Foo obj1 = null;
+    Bar obj2 = null;
+    System.out.print(obj1.str + " ");
+    System.out.print(obj2.str +);
   }
 }
