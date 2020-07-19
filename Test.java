@@ -293,3 +293,18 @@
 //     System.out.println("a:" +bar.a + " b:" + bar.b + " c:" + bar.c);
 //   }
 // }
+
+//53
+class Automobile {
+  public void drive() { System.out.println("go forward");}
+}
+class Ferrari extends Automobile {
+  public void drive() { System.out.println("go fast");}
+}
+public class Test {
+  public static void main(String[] args){
+    Automobile[] autos = {new Automobile(), new Ferrari()}; //ferrariはautomobileを継承していて、なおかつオーバーライドしているのでok
+    for (int x = 0; x < autos.length; x++)
+      autos[x].drive();
+  }
+}
